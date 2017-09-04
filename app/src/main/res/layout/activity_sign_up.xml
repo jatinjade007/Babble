@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5BAA9A"
+    tools:context="com.example.hp.babble.activity.SignUp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/greybackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/image" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:background="#5BAA9A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/edtUserName"
+            android:background="#5BAA9A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Enter UserName"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:background="#5BAA9A"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:background="#5BAA9A"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:background="#5BAA9A"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn"
+            android:text="submit"
+            android:id="@+id/btnRegister"
+            android:textColor="#fff" />
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+</LinearLayout>

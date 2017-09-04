@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="25dp">
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="13sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtBack">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15sp"
+            android:background="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15sp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:hint="Name"
+            android:textSize="15sp" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:id="@+id/btnRefresh"
+        android:background="@drawable/refresh1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10sp"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:id="@+id/lvMessage"
+        android:layout_below="@+id/rel2">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout">
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:hint=" Type Message "
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:layout_below="@+id/messageList"
+            android:layout_marginTop="10sp"/>
+        <Button
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:id="@+id/btnSend"
+            android:layout_toRightOf="@+id/edtMessage"
+            android:layout_below="@+id/messageList"
+            android:layout_marginTop="10sp"
+            android:onClick="true"
+            android:background="@drawable/send"
+            android:layout_marginLeft="5sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
